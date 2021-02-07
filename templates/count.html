@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Count Total</title>
+  </head>
+  <body>
+<h1>Original Text: {{ InputArea }}</h1>
+<h1>Total Wordcount:{{ count }}</h1>
+<a href="{% url 'home' %}">Start Again!</a>
+<h1>Individual Wordcount:</h1>
+{% for word, counttotal in sortedwords %}
+{{ word }} - {{ counttotal }}<br />
+{% endfor %}
+  </body>
+</html>

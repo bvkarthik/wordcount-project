@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wordcount</title>
+  </head>
+  <body>
+   <h1>Wordcount Test project</h1>
+   <form action="{% url 'count' %}">
+   <textarea name="InputArea" rows="8" cols="80"></textarea>
+   <br />
+   <input type="Submit" value="Count"></input>
+   </form>
+   <form action="{% url 'about' %}">
+   <input type="Submit" value="What's this!"></input>
+   </form>
+  </body>
+</html>
